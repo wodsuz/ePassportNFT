@@ -1,13 +1,15 @@
-import Head from "next/head";
 import { useTheme } from "next-themes";
 import React, { useEffect, useState } from "react";
 
 import styles from "../styles/Home.module.scss";
-import { SunIcon, MoonIcon } from "../components";
+import { Header, SunIcon, MoonIcon } from "../components";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
   const { resolvedTheme, setTheme } = useTheme();
+  const pageDescription =
+    "Explore our comprehensive Frequently Asked Questions (FAQ) page to find answers to common queries about Automated-bots. From troubleshooting tips to in-depth explanations, our FAQ section is designed to provide clarity and assistance. Save time and get the information you need quickly. If you have specific questions not covered here, feel free to reach out to our dedicated support team. Discover a wealth of knowledge at your fingertips with our user-friendly FAQ resource.";
+
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -17,10 +19,10 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>ePassport NFT | Collect,Travel,Earn! </title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Header
+        title="ePassport NFT | Collect,Travel,Earn! "
+        content={pageDescription}
+      />
 
       <main>
         <h1 className={styles.title}>
