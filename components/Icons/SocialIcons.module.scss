@@ -1,0 +1,6 @@
+.icon {
+  fill: #202020;
+  [data-theme="dark"] & {
+    fill: #fff;
+  }
+}

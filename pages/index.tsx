@@ -1,8 +1,8 @@
 import { useTheme } from "next-themes";
+import styles from "../styles/Home.module.scss";
 import React, { useEffect, useState } from "react";
 
-import styles from "../styles/Home.module.scss";
-import { Header, SunIcon, MoonIcon } from "../components";
+import { Header, SunIcon, MoonIcon, Layout } from "../components";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -19,27 +19,26 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <Header
+      <Layout
         title="ePassport NFT | Collect,Travel,Earn! "
         content={pageDescription}
-      />
-
-      <main>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-        <button
-          type="button"
-          aria-label="Toggle Theme"
-          className="toggle-button"
-          onClick={() => setTheme(resolvedTheme === "light" ? "dark" : "light")}
-        >
-          {resolvedTheme === "light" ? <SunIcon /> : <MoonIcon />}
-        </button>
-        <p>Current theme: {resolvedTheme}</p>
-
-        <p className={styles.description}>Get started by editing</p>
-      </main>
+      >
+        <main>
+          <h1 className={styles.title}>
+            Welcome to <a href="https://nextjs.org">Next.js!</a>
+          </h1>
+          <button
+            type="button"
+            aria-label="Toggle Theme"
+            className="toggle-button"
+            onClick={() =>
+              setTheme(resolvedTheme === "light" ? "dark" : "light")
+            }
+          >
+            {resolvedTheme === "light" ? <SunIcon /> : <MoonIcon />}
+          </button>
+        </main>
+      </Layout>
     </div>
   );
 }
