@@ -7,10 +7,17 @@
   },
   "dependencies": {
     "next": "latest",
+    "next-themes": "^0.2.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sass": "^1.69.7"
   },
   "engines": {
     "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.4",
+    "@types/react": "^18.2.48",
+    "typescript": "5.3.3"
   }
 }
