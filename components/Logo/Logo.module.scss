@@ -1,0 +1,15 @@
+.logoText {
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 2em;
+  color: #202020;
+  [data-theme="dark"] & {
+    color: #fff;
+  }
+  transition: all 0.2s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+  @media (max-width: 64em) {
+    font-size: 3em;
+  }
+}

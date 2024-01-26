@@ -1,0 +1,59 @@
+.Title {
+  font-size: 3em;
+  text-transform: capitalize;
+  color: #202020;
+  [data-theme="dark"] & {
+    color: #fff;
+  }
+  align-self: flex-start;
+  width: 80%;
+
+  span {
+    text-transform: uppercase;
+    font-family: "Akaya Telivigala", cursive;
+  }
+
+  @media (max-width: 70em) {
+    font-size: 2em;
+  }
+  @media (max-width: 48em) {
+    align-self: center;
+    text-align: center;
+  }
+  @media (max-width: 40em) {
+    width: 90%;
+  }
+}
+
+.SubTitle {
+  font-size: 1.25em;
+  text-transform: capitalize;
+  color: rgba(32, 32, 32, 0.6);
+  [data-theme="dark"] & {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  font-weight: 600;
+  margin-bottom: 1rem;
+  width: 80%;
+  align-self: flex-start;
+  @media (max-width: 40em) {
+    font-size: 1em;
+  }
+
+  @media (max-width: 48em) {
+    align-self: center;
+    text-align: center;
+  }
+}
+
+.ButtonContainer {
+  width: 80%;
+  align-self: flex-start;
+  @media (max-width: 48em) {
+    align-self: center;
+    text-align: center;
+    button {
+      margin: 0 auto;
+    }
+  }
+}

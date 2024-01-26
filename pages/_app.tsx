@@ -14,7 +14,7 @@ const outfit = Outfit({
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider>
-      <main className={outfit.className}>
+      <main className={sora.className}>
         <Component {...pageProps} />
       </main>
     </ThemeProvider>
