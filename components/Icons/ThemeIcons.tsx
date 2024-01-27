@@ -1,4 +1,5 @@
 import React from "react";
+import stlye from "./SocialIcons.module.scss";
 
 export const SunIcon = () => {
   return (
@@ -8,7 +9,7 @@ export const SunIcon = () => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="icon"
+      className={stlye.themeIcon}
     >
       <path
         strokeLinecap="round"
@@ -27,7 +28,7 @@ export const MoonIcon = () => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="icon"
+      className={stlye.themeIcon}
     >
       <path
         strokeLinecap="round"
@@ -46,7 +47,7 @@ export const CloudIcon = () => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-6 h-6"
+      className={stlye.themeIcon}
     >
       <path
         strokeLinecap="round"

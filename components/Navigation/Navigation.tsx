@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import styles from "./Navigation.module.scss";
 
-import { DefaultButton } from "../Buttons";
+import { DefaultButton, ThemeButton } from "../Buttons";
 import { Logo } from "../Logo";
 import { SunIcon, MoonIcon } from "../Icons";
 
@@ -57,26 +57,18 @@ const Navigation = () => {
           <div className={styles.menuItem} onClick={() => scrollTo("faq")}>
             Faq
           </div>
+          <div>
+            <ThemeButton resolvedTheme={resolvedTheme} setTheme={setTheme} />
+          </div>
           <div className={styles.mobile}>
             <DefaultButton text="Connect Wallet" link="https://google.com" />
           </div>
-          <button
-            type="button"
-            aria-label="Toggle Theme"
-            className="toggle-button"
-            onClick={() =>
-              setTheme(resolvedTheme === "light" ? "dark" : "light")
-            }
-          >
-            {resolvedTheme === "light" ? <SunIcon /> : <MoonIcon />}
-          </button>
         </div>
 
         <div className={styles.desktop}>
           <DefaultButton text="Connect Wallet" link="https://google.com" />
         </div>
       </div>
-      <hr />
     </div>
   );
 };

@@ -4,3 +4,12 @@
     fill: #fff;
   }
 }
+
+.themeIcon {
+  height: 1rem;
+  width: 1rem;
+  color: white;
+  [data-theme="dark"] & {
+    color: #202020;
+  }
+}

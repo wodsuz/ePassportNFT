@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 
 import styles from "./DefaultButton.module.scss";
 import { SunIcon, MoonIcon } from "../Icons";
@@ -8,17 +7,17 @@ const DefaultButton = ({
   resolvedTheme,
   setTheme,
 }: {
-  resolvedTheme: string;
-  setTheme: (theme: string | ((theme: string) => string)) => Promise<void>;
+  resolvedTheme: string | undefined;
+  setTheme: (theme: string) => void;
 }) => {
   return (
     <button
       type="button"
       aria-label="Toggle Theme"
-      className="toggle-button"
+      className={styles.toggle}
       onClick={() => setTheme(resolvedTheme === "light" ? "dark" : "light")}
     >
-      {resolvedTheme === "light" ? <SunIcon /> : <MoonIcon />}
+      {resolvedTheme === "light" ? <MoonIcon /> : <SunIcon />}
     </button>
   );
 };
