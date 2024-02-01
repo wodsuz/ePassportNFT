@@ -4,7 +4,6 @@ import styles from "./Navigation.module.scss";
 
 import { DefaultButton, ThemeButton } from "../Buttons";
 import { Logo } from "../Logo";
-import { SunIcon, MoonIcon } from "../Icons";
 
 const Navigation = () => {
   const [click, setClick] = useState(false);

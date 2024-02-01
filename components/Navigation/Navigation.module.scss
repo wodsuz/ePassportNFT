@@ -107,8 +107,7 @@
     [data-theme="dark"] & {
       background-color: rgba(32, 32, 32, 0.85);
     }
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
+    filter: blur(4px);
 
     transform: translateY(1000%);
     transform: active translateY(0);
@@ -138,7 +137,7 @@
     [data-theme="dark"] & {
       background-color: #fff;
     }
-    transition: width 0.3s ease;
+    transition: width 1s ease;
   }
 
   &:hover::after {

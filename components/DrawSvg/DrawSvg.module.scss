@@ -1,0 +1,48 @@
+.VectorContainer {
+  position: absolute;
+  top: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  svg {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    path {
+      stroke: #202020;
+      [data-theme="dark"] & {
+        stroke: #fff;
+      }
+    }
+  }
+
+  @media (max-width: 48em) {
+    left: 1rem;
+  }
+}
+
+@keyframes Bounce {
+  from {
+    transform: translateX(-50%) scale(0.5);
+  }
+  to {
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+.Ball {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #202020;
+  animation: Bounce 0.5s linear infinite alternate;
+  @media (max-width: 48em) {
+    left: 1rem;
+  }
+}

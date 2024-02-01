@@ -4,8 +4,7 @@ import styles from "./TypeWriterText.module.scss";
 
 import { DefaultButton } from "../Buttons";
 
-import { Akaya_Telivigala, Outfit, Sora } from "next/font/google";
-// If loading a variable font, you don't need to specify the font weight
+import { Akaya_Telivigala, Sora } from "next/font/google";
 const akaya = Akaya_Telivigala({ subsets: ["latin"], weight: ["400"] });
 const sora = Sora({ subsets: ["latin"], weight: ["400"] });
 
@@ -22,17 +21,17 @@ const TypeWriterText = () => {
             }}
             onInit={(typewriter) => {
               typewriter
-                .typeString(`<span style="color:blue">NFTs.</span>`)
+                .typeString(`<span style="color:#2680aa">NFTs.</span>`)
                 .pauseFor(2000)
-                .deleteAll()
+                .deleteAll(100)
                 .typeString(
                   '<span style="color:orange">Collectible Items.</span>'
                 )
                 .pauseFor(2000)
-                .deleteAll()
-                .typeString('<span style="color:red">Ape Killers!</span>')
+                .deleteAll(100)
+                .typeString('<span style="color:#f21717">Ape Killers!</span>')
                 .pauseFor(2000)
-                .deleteAll()
+                .deleteAll(100)
                 .start();
             }}
           />
