@@ -1,4 +1,13 @@
-import { Layout, Navigation, Home, About, Roadmap } from "../components";
+import {
+  Layout,
+  Navigation,
+  Home,
+  About,
+  Roadmap,
+  Showcase,
+  Team,
+  Faq,
+} from "../components";
 
 export default function Homepage() {
   const pageDescription =
@@ -14,6 +23,9 @@ export default function Homepage() {
         <Home />
         <About />
         <Roadmap />
+        <Showcase />
+        <Team />
+        <Faq />
       </Layout>
     </div>
   );

@@ -10,7 +10,9 @@
     "next": "latest",
     "next-themes": "^0.2.1",
     "react": "18.2.0",
+    "react-confetti": "^6.1.0",
     "react-dom": "18.2.0",
+    "react-use": "^17.5.0",
     "sass": "^1.69.7",
     "swiper": "^9.4.1",
     "typewriter-effect": "^2.21.0"

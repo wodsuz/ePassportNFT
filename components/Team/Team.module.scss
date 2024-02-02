@@ -1,0 +1,123 @@
+.Section {
+  min-height: 50vh;
+  width: 100vw;
+  background-color: #fff;
+  [data-theme="dark"] & {
+    background-color: #202020;
+  }
+  position: relative;
+}
+
+.Title {
+  font-size: 3em;
+  text-transform: capitalize;
+  color: #202020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem auto;
+  border-bottom: 2px solid #202020;
+  [data-theme="dark"] & {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+  }
+  width: -moz-fit-content;
+  width: fit-content;
+  @media (max-width: 40em) {
+    font-size: 2em;
+  }
+  padding-top: 2rem;
+}
+
+.Container {
+  width: 95%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 64em) {
+    width: 80%;
+  }
+  @media (max-width: 48em) {
+    width: 90%;
+    justify-content: center;
+  }
+}
+
+.Item {
+  width: calc(20rem - 4vw);
+  padding: 1rem 0;
+  color: #fff;
+  border: 2px solid #202020;
+
+  [data-theme="dark"] & {
+    color: #202020;
+    border: 2px solid #fff;
+  }
+  margin: 2rem 1rem;
+  position: relative;
+  z-index: 5;
+  //backdrop-filter: blur(4px);
+
+  border-radius: 20px;
+
+  &:hover {
+    img {
+      transform: translateY(-2rem) scale(1.2);
+    }
+  }
+
+  @media (max-width: 30em) {
+    width: 70vw;
+  }
+}
+
+.ImageContainer {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #eeedde;
+  border: 1px solid #202020;
+
+  [data-theme="dark"] & {
+    border: 1px #fff;
+  }
+  padding: 1rem;
+
+  border-radius: 20px;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+  }
+}
+
+.Name {
+  font-size: 1.25em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #202020;
+  [data-theme="dark"] & {
+    color: #fff;
+  }
+  margin: 1rem;
+}
+
+.Position {
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  color: rgba(32, 32, 32, 0.9);
+  [data-theme="dark"] & {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  font-weight: 400;
+  margin: 1rem;
+}

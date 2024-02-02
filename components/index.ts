@@ -5,3 +5,6 @@ export { Navigation } from "./Navigation";
 export { Home } from "./Home";
 export { About } from "./About";
 export { Roadmap } from "./Roadmap";
+export { Showcase } from "./Showcase";
+export { Team } from "./Team";
+export { Faq } from "./Faq";
