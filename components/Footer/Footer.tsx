@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link";
 import styles from "./Footer.module.scss";
 
+import { Logo } from "../Logo";
+import { Banner } from "../Banner";
 import { Facebook, Twitter, Instagram, LinkedIn } from "../Icons";
 const Footer = () => {
   const scrollTo = (id: string) => {
@@ -14,8 +16,10 @@ const Footer = () => {
   };
   return (
     <div className={styles.section}>
+      <Banner />
       <div className={styles.container}>
         <div className={styles.left}>
+          <Logo />
           <div className={styles.iconList}>
             <Link
               href="http://www.facebook.com"
@@ -69,8 +73,8 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.bottom}>
-        <span>
-          &copy; {new Date().getFullYear()} ePassport. All rights reserved.This
+        <span className={styles.copyright}>
+          &copy; {new Date().getFullYear()} ePassport. All rights reserved. This
           project or any portion thereof may not be reproduced or used in any
           manner whatsoever without the express written and agreement permission
           of the owner.
@@ -88,10 +92,5 @@ const Footer = () => {
     </div>
   );
 };
-/*
- * Copyright (c) {new Date().getFullYear()} ePassport. All rights reserved.
- *
- * This code or any portion thereof may not be reproduced or used in any manner whatsoever
- * without the express written permission of the owner.
- */
+
 export default Footer;

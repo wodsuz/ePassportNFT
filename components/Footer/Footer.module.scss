@@ -1,5 +1,5 @@
 .section {
-  min-height: 100vh;
+  min-height: 50vh;
   width: 100vw;
   background-color: #fff;
   [data-theme="dark"] & {
@@ -16,7 +16,7 @@
 
 .container {
   width: 75%;
-  margin: 2rem auto;
+  margin: 1rem auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -94,10 +94,11 @@
 
 .bottom {
   list-style: none;
-  width: 50%;
+  width: 75%;
   display: flex;
   margin: 0 auto;
-  justify-content: space-between;
+
+  justify-content: space-around;
   align-items: center;
   a {
     text-decoration: underline;
@@ -106,7 +107,9 @@
     flex-direction: column;
     width: 100%;
   }
-  span {
-    margin-bottom: 1rem;
+  .copyright {
+    font-size: 1em;
+    text-align: justify;
+    width: 60%;
   }
 }
