@@ -1,0 +1,25 @@
+.Up {
+  width: 3rem;
+  height: 3rem;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  color: #000;
+  background-color: #fff;
+  [data-theme="dark"] & {
+    color: #fff;
+    background-color: #000;
+  }
+  font-size: 2rem;
+
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}

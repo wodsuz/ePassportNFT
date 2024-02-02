@@ -22,7 +22,7 @@
   [data-theme="dark"] & {
     color: #202020;
   }
-  margin: 2rem auto;
+  margin: 2rem auto 1rem auto;
   border-bottom: 2px solid #eeedde;
   width: -moz-fit-content;
   width: fit-content;
@@ -33,7 +33,7 @@
 
 .Container {
   width: 85%;
-  margin: 3rem auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
