@@ -1,4 +1,4 @@
-import React, { useRef, useLayoutEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import { useWindowScroll } from "react-use";
 
 import styles from "./ScrollToTop.module.scss";
@@ -16,7 +16,7 @@ const ScrollToTop = () => {
     });
   };
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (y > 200) {
       ref.current!.style.display = "flex";
     } else {
