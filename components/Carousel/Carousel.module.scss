@@ -1,22 +1,35 @@
 .Container {
-  width: 25vw;
-  height: 60vh;
-  @media (max-width: 70em) {
-    height: 60vh;
-  }
-  color: blue;
-  @media (max-width: 64em) {
-    height: 50vh;
-    width: 30vw;
+  width: 80%;
+  height: 30%;
+  color: black;
+  img {
+    padding: 5%;
+    margin-bottom: 10%;
   }
 
-  @media (max-width: 48em) {
-    height: 50vh;
-    width: 40vw;
+  @media only screen and (min-width: 960px) {
+    /* styles for browsers larger than 960px; */
+    width: 65%;
+    height: 30%;
   }
-
-  @media (max-width: 30em) {
-    height: 45vh;
-    width: 60vw;
+  @media only screen and (min-width: 1440px) {
+    /* styles for browsers larger than 1440px; */
+    width: 60%;
+    height: 30%;
+  }
+  @media only screen and (min-width: 2000px) {
+    /* for sumo sized (mac) screens */
+    width: 65%;
+    height: 30%;
+  }
+  @media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+    width: 100%;
+    height: 30%;
+  }
+  @media only screen and (device-width: 768px) {
+    /* default iPad screens */
+    width: 100%;
+    height: 30%;
   }
 }
