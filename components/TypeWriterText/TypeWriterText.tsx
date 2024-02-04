@@ -12,7 +12,7 @@ const TypeWriterText = () => {
   return (
     <div className={sora.className}>
       <div className={styles.Title}>
-        Discover a new era of cool
+        Discover a new era of
         <div className={akaya.className}>
           <Typewriter
             options={{
@@ -37,7 +37,7 @@ const TypeWriterText = () => {
           />
         </div>
       </div>
-      <div className={styles.SubTitle}>Bored Of Apes? Try Something New.</div>
+      <div className={styles.SubTitle}>Get your virtual NFT passport.</div>
       <div className={styles.ButtonContainer}>
         <DefaultButton text="Explore" link="#about" />
       </div>

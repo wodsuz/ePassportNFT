@@ -1,15 +1,31 @@
 .icon {
+  fill: #fff;
+  [data-theme="dark"] & {
+    fill: #202020;
+  }
+  width: 32px;
+  height: 32px;
+}
+
+.outline {
   fill: #202020;
   [data-theme="dark"] & {
     fill: #fff;
   }
+  width: 32px;
+  height: 32px;
 }
 
 .themeIcon {
   height: 1rem;
   width: 1rem;
   color: white;
+
   [data-theme="dark"] & {
     color: #202020;
+  }
+  @media (max-width: 80em) {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }

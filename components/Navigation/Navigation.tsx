@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
+import Link from "next/link";
+
 import styles from "./Navigation.module.scss";
 
-import { DefaultButton, ThemeButton } from "../Buttons";
 import { Logo } from "../Logo";
+import { DefaultButton, ThemeButton } from "../Buttons";
+import { Opensea, Twitter, Discord, LinkedIn } from "../Icons";
 
 const Navigation = () => {
   const [click, setClick] = useState(false);
@@ -20,6 +23,19 @@ const Navigation = () => {
     setClick(!click);
   };
 
+  const hamburgerMenu = () => {
+    const navMenu = document.querySelector("#navMenu");
+    if (navMenu?.attributes[1].value === styles.hamburgerMenuAfter) {
+      document
+        .querySelector("#navMenu")!
+        .setAttribute("class", styles.hamburgerMenu);
+    } else {
+      document
+        .querySelector("#navMenu")!
+        .setAttribute("class", styles.hamburgerMenuAfter);
+    }
+  };
+
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -28,47 +44,80 @@ const Navigation = () => {
   }
 
   return (
-    <div className={styles.section} id="navigation">
-      <div className={styles.navbar}>
+    <section className={styles.section} id="navigation">
+      <section className={styles.navbar}>
         <Logo />
-        <div className={styles.hamburgerMenu} onClick={() => setClick(!click)}>
+        <span
+          id="navMenu"
+          className={styles.hamburgerMenu}
+          onClick={() => hamburgerMenu()}
+        >
           &nbsp;
-        </div>
-        <div className={styles.menu}>
-          <div
+        </span>
+        <ul className={styles.menu}>
+          <li
             className={styles.menuItem}
             onClick={() => scrollTo("navigation")}
           >
             Home
-          </div>
-          <div className={styles.menuItem} onClick={() => scrollTo("about")}>
+          </li>
+          <li className={styles.menuItem} onClick={() => scrollTo("about")}>
             About
-          </div>
-          <div className={styles.menuItem} onClick={() => scrollTo("roadmap")}>
+          </li>
+          <li className={styles.menuItem} onClick={() => scrollTo("roadmap")}>
             Roadmap
-          </div>
-          <div className={styles.menuItem} onClick={() => scrollTo("showcase")}>
+          </li>
+          <li className={styles.menuItem} onClick={() => scrollTo("showcase")}>
             Showcase
-          </div>
-          <div className={styles.menuItem} onClick={() => scrollTo("team")}>
+          </li>
+          <li className={styles.menuItem} onClick={() => scrollTo("team")}>
             Team
-          </div>
-          <div className={styles.menuItem} onClick={() => scrollTo("faq")}>
+          </li>
+          <li className={styles.menuItem} onClick={() => scrollTo("faq")}>
             Faq
-          </div>
-          <div>
+          </li>
+          <li className={styles.menuItem} onClick={() => scrollTo("contact")}>
+            Contact
+          </li>
+          <li className={styles.menuItem} onClick={() => scrollTo("contact")}>
+            Whitepaper
+          </li>
+          <li>
             <ThemeButton resolvedTheme={resolvedTheme} setTheme={setTheme} />
-          </div>
-          <div className={styles.mobile}>
+          </li>
+          <li className={styles.iconList}>
+            <Link
+              href="https://opensea.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Opensea />
+            </Link>
+            <Link
+              href="http://www.twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Twitter />
+            </Link>
+            <Link
+              href="http://www.discord.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Discord />
+            </Link>
+          </li>
+          <li className={styles.mobile}>
             <DefaultButton text="Connect Wallet" link="https://google.com" />
-          </div>
-        </div>
+          </li>
+        </ul>
 
         <div className={styles.desktop}>
           <DefaultButton text="Connect Wallet" link="https://google.com" />
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 };
 

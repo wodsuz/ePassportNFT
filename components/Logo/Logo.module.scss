@@ -1,6 +1,8 @@
 .logoText {
-  font-family: "Akaya Telivigala", cursive;
-  font-size: 2em;
+  font-size: 1em;
+  font-weight: 100;
+  margin-bottom: 3px;
+
   color: #202020;
   [data-theme="dark"] & {
     color: #fff;

@@ -13,7 +13,7 @@ const About = () => {
         </div>
         <div className={styles.box}>
           <div className={styles.title}>
-            Welcome To <br /> The Weirdos Club.
+            Welcome To <br /> ePassport
           </div>
           <div className={styles.subText}>
             {" "}
