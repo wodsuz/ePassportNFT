@@ -8,11 +8,29 @@ import { Akaya_Telivigala, Sora } from "next/font/google";
 const akaya = Akaya_Telivigala({ subsets: ["latin"], weight: ["400"] });
 const sora = Sora({ subsets: ["latin"], weight: ["400"] });
 
+const changeCursor = (id: string) => {
+  if (id === "first") {
+    document.querySelector("#mainTitle")!.classList.add(styles.firstCursor);
+    document.querySelector("#mainTitle")!.classList.remove(styles.secondCursor);
+    document.querySelector("#mainTitle")!.classList.remove(styles.thirdCursor);
+  }
+  if (id === "second") {
+    document.querySelector("#mainTitle")!.classList.remove(styles.firstCursor);
+    document.querySelector("#mainTitle")!.classList.add(styles.secondCursor);
+    document.querySelector("#mainTitle")!.classList.remove(styles.thirdCursor);
+  }
+  if (id === "third") {
+    document.querySelector("#mainTitle")!.classList.remove(styles.firstCursor);
+    document.querySelector("#mainTitle")!.classList.remove(styles.secondCursor);
+    document.querySelector("#mainTitle")!.classList.add(styles.thirdCursor);
+  }
+};
+
 const TypeWriterText = () => {
   return (
-    <div className={sora.className}>
-      <div className={styles.Title}>
-        Discover a new era of
+    <>
+      <div className={styles.Title} id="mainTitle">
+        Discover your
         <div className={akaya.className}>
           <Typewriter
             options={{
@@ -21,17 +39,19 @@ const TypeWriterText = () => {
             }}
             onInit={(typewriter) => {
               typewriter
-                .typeString(`<span style="color:#2680aa">NFTs.</span>`)
+                .callFunction(() => changeCursor("first"))
+                .typeString(`<span>Digital Identity.</span>`)
                 .pauseFor(2000)
                 .deleteAll(100)
-                .typeString(
-                  '<span style="color:orange">Collectible Items.</span>'
-                )
+                .callFunction(() => changeCursor("second"))
+                .typeString(`<span>Blockchain Passport.</span>`)
                 .pauseFor(2000)
                 .deleteAll(100)
-                .typeString('<span style="color:#f21717">Ape Killers!</span>')
+                .callFunction(() => changeCursor("third"))
+                .typeString(`<span>Collectible Stamps!</span>`)
                 .pauseFor(2000)
                 .deleteAll(100)
+                .callFunction(() => changeCursor("first"))
                 .start();
             }}
           />
@@ -41,7 +61,7 @@ const TypeWriterText = () => {
       <div className={styles.ButtonContainer}>
         <DefaultButton text="Explore" link="#about" />
       </div>
-    </div>
+    </>
   );
 };
 

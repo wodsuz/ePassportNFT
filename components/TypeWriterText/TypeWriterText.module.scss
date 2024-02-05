@@ -3,15 +3,20 @@
   text-transform: capitalize;
   color: #202020;
   [data-theme="dark"] & {
-    color: #fff;
+    color: #ffffff;
   }
   align-self: flex-start;
-  width: 80%;
+  width: 90%;
   font-weight: bold;
 
   span {
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 1em;
+    color: #38bdf8;
+    [data-theme="dark"] & {
+      color: #2680aa;
+    }
   }
 
   @media (max-width: 70em) {
@@ -55,6 +60,33 @@
     text-align: center;
     button {
       margin: 0 auto;
+    }
+  }
+}
+
+.firstCursor {
+  span {
+    color: #075985;
+    [data-theme="dark"] & {
+      color: #38bdf8;
+    }
+  }
+}
+
+.secondCursor {
+  span {
+    color: #115e59;
+    [data-theme="dark"] & {
+      color: #2dd4bf;
+    }
+  }
+}
+
+.thirdCursor {
+  span {
+    color: #5b21b6;
+    [data-theme="dark"] & {
+      color: #a78bfa;
     }
   }
 }

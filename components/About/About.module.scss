@@ -5,9 +5,10 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: #000000;
+
+  background-color: #dcdcdc;
   [data-theme="dark"] & {
-    background-color: #dcdcdc;
+    background-color: #171616;
   }
 }
 
@@ -52,9 +53,9 @@
 .title {
   font-size: 3em;
   //text-transform: capitalize;
-  color: #fff;
+  color: #202020;
   [data-theme="dark"] & {
-    color: #202020;
+    color: #fff;
   }
   align-self: flex-start;
   width: 80%;
@@ -73,9 +74,9 @@
 
 .subText {
   font-size: 1.25em;
-  color: #fff;
+  color: #202020;
   [data-theme="dark"] & {
-    color: #202020;
+    color: #fff;
   }
   align-self: flex-start;
   width: 80%;
@@ -96,9 +97,9 @@
 
 .subTextLight {
   font-size: 1em;
-  color: rgba(#eeedde, 0.6);
+  color: rgba(#202020, 0.6);
   [data-theme="dark"] & {
-    color: rgba(#202020, 0.6);
+    color: rgba(#eeedde, 0.6);
   }
   align-self: flex-start;
   width: 80%;
