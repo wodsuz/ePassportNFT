@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import styles from "./About.module.scss";
 
 import { Carousel } from "../Carousel";
@@ -31,7 +32,10 @@ const About = () => {
             ePassport.
           </p>
           <div className={styles.buttonContainer}>
-            <DefaultButton text="JOIN OUR DISCORD" link="#" />
+            <DefaultButton
+              text="JOIN OUR DISCORD"
+              link="https://discord.gg/PzhhBBzF"
+            />
           </div>
         </div>
       </div>
