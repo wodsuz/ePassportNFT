@@ -101,7 +101,7 @@ const Navigation = () => {
               <Twitter />
             </Link>
             <Link
-              href="http://www.discord.com"
+              href="https://discord.com/invite/PzhhBBzF"
               target="_blank"
               rel="noopener noreferrer"
             >

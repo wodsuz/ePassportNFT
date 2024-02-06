@@ -72,28 +72,29 @@ const Roadmap = () => {
           <li className={styles.Item}>&nbsp;</li>
           <RoadMapItem
             addToReft={addToRefts}
-            title="Grand Opening"
-            subText="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat."
+            title="The Grand Launch"
+            subText="A new era of ePassport collection, sharing and travelling begins.Launching collection, discord and website"
           />
           <RoadMapItem
             addToReft={addToRefts}
-            title="Great Benefits"
-            subText="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat."
+            title="ePassport Minting Stage"
+            subText="User will have chance to mint their first version ePassports. Passport is required in order to collect stamps and travel around the world."
+          />
+
+          <RoadMapItem
+            addToReft={addToRefts}
+            title="Reward and Partnership"
+            subText="Holders of ePassport will be eligible to get benefits and rewards. We will also be partnering with other projects to provide more benefits to our users."
           />
           <RoadMapItem
             addToReft={addToRefts}
-            title="Early Access"
-            subText="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat."
+            title="Stamp Collection and Traveling"
+            subText="Users will be able to collect stamps from different countries and share their experiences with others on their ePassport. "
           />
           <RoadMapItem
             addToReft={addToRefts}
-            title="New Merch"
-            subText="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat."
-          />
-          <RoadMapItem
-            addToReft={addToRefts}
-            title="Holders Ranking"
-            subText="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat."
+            title="New round of ePassport Minting Stage"
+            subText="User will have chance to mint or upgrade their ePassports that will provide different properties and rewards."
           />
         </ul>
       </div>

@@ -13,7 +13,7 @@
     path {
       stroke: #202020;
       [data-theme="dark"] & {
-        stroke: #fff;
+        stroke: #ffffff;
       }
     }
   }
@@ -41,6 +41,9 @@
   height: 1.5rem;
   border-radius: 50%;
   background-color: #202020;
+  [data-theme="dark"] & {
+    background-color: #ffffff;
+  }
   animation: Bounce 0.5s linear infinite alternate;
   @media (max-width: 48em) {
     left: 1rem;
