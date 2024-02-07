@@ -2,11 +2,11 @@
   min-height: 50vh;
   height: auto;
   width: 100vw;
-  background-color: black;
-  color: #fff;
+  background-color: #dcdcdc;
+  color: #202020;
   [data-theme="dark"] & {
-    background-color: #fff;
-    color: #202020;
+    background-color: #171616;
+    color: #fff;
   }
   position: relative;
   display: flex;
@@ -18,9 +18,9 @@
 .Title {
   font-size: 3em;
   text-transform: uppercase;
-  color: #fff;
+  color: #202020;
   [data-theme="dark"] & {
-    color: #202020;
+    color: #fff;
   }
   margin: 2rem auto 1rem auto;
   border-bottom: 2px solid #eeedde;
