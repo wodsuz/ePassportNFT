@@ -79,13 +79,13 @@ const Footer = () => {
           manner whatsoever without the express written and agreement permission
           of the owner.
         </span>
-        <span>
+        <span className={styles.author}>
           <Link
             href="https://www.ongundemirag.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ongundemirag
+            &copy; ongundemirag
           </Link>
         </span>
       </div>
