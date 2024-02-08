@@ -25,10 +25,10 @@ const NftItem = ({
       onMouseOver={(e) => pause(e)}
       onMouseOut={(e) => play(e)}
     >
-      <img src={img} alt="The Weirdo" />
+      <img src={img} alt="ePassport showcase image" />
       <div className={styles.Details}>
         <div>
-          <span>Weirdos</span> <br />
+          <span>ePassport</span> <br />
           <h1>#{number} </h1>
         </div>
         <div>

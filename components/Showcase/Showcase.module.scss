@@ -56,7 +56,7 @@
   margin: 0 1rem;
   background-color: #fff;
   [data-theme="dark"] & {
-    background-color: rgb(35, 34, 35);
+    background-color: #424242;
   }
   border-radius: 20px;
   cursor: pointer;
@@ -80,8 +80,8 @@
   border: 2px solid rgba(255, 255, 255, 0.5);
 
   [data-theme="dark"] & {
-    background-color: #fff;
-    border: 2px solid #fff;
+    background-color: #424242;
+    border: 2px solid #b0afaf;
   }
 
   border-bottom-left-radius: 20px;
@@ -91,7 +91,7 @@
     font-size: 0.875em;
     color: rgba(255, 255, 255, 0.5);
     [data-theme="dark"] & {
-      color: rgba(32, 32, 32, 0.5);
+      color: rgba(255, 255, 255, 0.5);
     }
     font-weight: 600;
     line-height: 1.5rem;
@@ -101,7 +101,7 @@
     font-size: 1em;
     color: #fff;
     [data-theme="dark"] & {
-      color: #202020;
+      color: #fff;
     }
     font-weight: 600;
     @media (max-width: 30em) {

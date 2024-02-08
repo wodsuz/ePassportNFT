@@ -7,6 +7,7 @@ import {
   Showcase,
   Team,
   Faq,
+  Contact,
   ScrollToTop,
 } from "../components";
 
@@ -27,6 +28,7 @@ export default function Homepage() {
         <Showcase />
         <Team />
         <Faq />
+        <Contact />
         <ScrollToTop />
       </Layout>
     </div>

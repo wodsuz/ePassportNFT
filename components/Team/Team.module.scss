@@ -82,11 +82,12 @@
 
   [data-theme="dark"] & {
     border: 1px #fff;
+    background-color: #424242;
   }
   padding: 1rem;
 
   border-radius: 20px;
-  cursor: pointer;
+  //cursor: pointer;
 
   img {
     width: 100%;
