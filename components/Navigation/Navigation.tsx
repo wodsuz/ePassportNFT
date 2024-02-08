@@ -94,7 +94,7 @@ const Navigation = () => {
               <Opensea />
             </Link>
             <Link
-              href="http://www.twitter.com"
+              href="https://twitter.com/ePassport_nft"
               target="_blank"
               rel="noopener noreferrer"
             >

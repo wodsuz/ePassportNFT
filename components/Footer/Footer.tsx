@@ -4,7 +4,7 @@ import styles from "./Footer.module.scss";
 
 import { Logo } from "../Logo";
 import { Banner } from "../Banner";
-import { Facebook, Twitter, Instagram, LinkedIn } from "../Icons";
+import { Opensea, Twitter, Discord } from "../Icons";
 const Footer = () => {
   const scrollTo = (id: string) => {
     let element = document.getElementById(id);
@@ -22,32 +22,25 @@ const Footer = () => {
           <Logo />
           <div className={styles.iconList}>
             <Link
-              href="http://www.facebook.com"
+              href="https://opensea.io/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Facebook />
+              <Opensea />
             </Link>
             <Link
-              href="http://www.facebook.com"
+              href="https://twitter.com/ePassport_nft"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Twitter />
             </Link>
             <Link
-              href="http://www.facebook.com"
+              href="https://discord.com/invite/PzhhBBzF"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Instagram />
-            </Link>
-            <Link
-              href="http://www.facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <LinkedIn />
+              <Discord />
             </Link>
           </div>
         </div>
