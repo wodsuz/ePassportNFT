@@ -1,15 +1,15 @@
 .section {
   min-height: 80vh;
+  height: auto;
   width: 100vw;
-  background-color: #fff;
+  background-color: #dcdcdc;
+  color: #202020;
   [data-theme="dark"] & {
-    background-color: #202020;
+    background-color: #171616;
     color: #fff;
   }
 
   position: relative;
-  color: #202020;
-
   display: flex;
   flex-direction: column;
 }

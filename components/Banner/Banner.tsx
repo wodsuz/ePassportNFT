@@ -10,12 +10,15 @@ const Banner = () => {
         <img src="../assets/Nfts/bighead-2.svg" alt="The Weirdos" />
         <img src="../assets/Nfts/bighead-3.svg" alt="The Weirdos" />
         <img src="../assets/Nfts/bighead-4.svg" alt="The Weirdos" />
+        <img src="../assets/Nfts/bighead-5.svg" alt="The Weirdos" />
       </div>
       <h1 className={styles.Title}>
-        Join the <br /> weirdos club{" "}
+        Get Your Virtual <br /> ePassport{" "}
       </h1>
       <div className={styles.BtnContainer}>
-        <button className={styles.JoinNow}>Join Now</button>
+        <button type="button" className={styles.JoinNow}>
+          Join Now
+        </button>
       </div>
     </section>
   );

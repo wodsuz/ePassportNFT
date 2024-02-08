@@ -2,11 +2,11 @@
   width: 100vw;
   height: 25rem;
   position: relative;
-  border-top: 2px solid #202020;
-  background-color: rgba(32, 32, 32, 0.9);
+  border-top: 2px solid #fff;
+  background-color: #fff;
   [data-theme="dark"] & {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-top: 2px solid #fff;
+    background-color: #202020;
+    border-top: 2px solid #202020;
   }
   display: flex;
   justify-content: center;
@@ -52,16 +52,16 @@
 
 .Title {
   font-size: 4em;
-  color: #fff;
+  color: #202020;
   [data-theme="dark"] & {
-    color: #202020;
+    color: #fff;
     font-size: 3rem;
-    text-shadow: 1px 1px 2px #fff;
+    //text-shadow: 1px 1px 2px #fff;
   }
   padding: 1rem 2rem;
   z-index: 10;
   width: 35%;
-  text-transform: capitalize;
+  //text-transform: capitalize;
   text-shadow: 1px 1px 2px #202020;
   @media (max-width: 64em) {
     font-size: 2.5rem;
@@ -77,11 +77,11 @@
 
 .JoinNow {
   display: inline-block;
-  background-color: #fff;
-  color: #202020;
+  color: #fff;
+  background-color: #202020;
   [data-theme="dark"] & {
-    color: #fff;
-    background-color: #202020;
+    background-color: #fff;
+    color: #202020;
   }
   outline: none;
   border: none;
@@ -109,9 +109,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    border: 2px solid #fff;
+    border: 2px solid #202020;
     [data-theme="dark"] & {
-      border: 2px solid #202020;
+      border: 2px solid #fff;
     }
     width: 100%;
     height: 100%;
