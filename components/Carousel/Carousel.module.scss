@@ -2,6 +2,7 @@
   width: 80%;
   height: 30%;
   color: black;
+
   img {
     padding: 5%;
     margin-bottom: 10%;
@@ -32,4 +33,12 @@
     width: 100%;
     height: 30%;
   }
+}
+
+.Images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 110%;
+  transform: scale(2);
 }
