@@ -67,8 +67,11 @@
     width: 10rem;
   }
   img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    height: auto;
+    transform: scale(1.6);
   }
 }
 

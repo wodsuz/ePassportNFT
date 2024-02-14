@@ -56,31 +56,31 @@ const Showcase = () => {
     <section className={styles.Section} id="showcase">
       <div className={styles.Row} ref={Row1Ref}>
         <NftItem
-          img="/assets/Nfts/bighead.svg"
+          img="/assets/Nfts/Group 13.svg"
           number={654}
           price={1.5}
           passRef={Row1Ref}
         />
         <NftItem
-          img="/assets/Nfts/bighead-1.svg"
+          img="/assets/Nfts/Group 14.svg"
           number={154}
           price={1}
           passRef={Row1Ref}
         />
         <NftItem
-          img="/assets/Nfts/bighead-2.svg"
+          img="/assets/Nfts/Group 15.svg"
           number={244}
           price={2.5}
           passRef={Row1Ref}
         />
         <NftItem
-          img="/assets/Nfts/bighead-3.svg"
+          img="/assets/Nfts/Group 16.svg"
           number={354}
           price={2.5}
           passRef={Row1Ref}
         />
         <NftItem
-          img="/assets/Nfts/bighead-4.svg"
+          img="/assets/Nfts/Group 17.svg"
           number={454}
           price={2.5}
           passRef={Row1Ref}
@@ -88,31 +88,31 @@ const Showcase = () => {
       </div>
       <div className={styles.InvRow} ref={Row2Ref}>
         <NftItem
-          img="/assets/Nfts/bighead-5.svg"
+          img="/assets/Nfts/Group 18.svg"
           number={654}
           price={1}
           passRef={Row2Ref}
         />
         <NftItem
-          img="/assets/Nfts/bighead-6.svg"
+          img="/assets/Nfts/Group 19.svg"
           number={555}
           price={1.5}
           passRef={Row2Ref}
         />
         <NftItem
-          img="/assets/Nfts/bighead-7.svg"
+          img="/assets/Nfts/Group 20.svg"
           number={254}
           price={4.5}
           passRef={Row2Ref}
         />
         <NftItem
-          img="/assets/Nfts/bighead-8.svg"
+          img="/assets/Nfts/Group 21.svg"
           number={222}
           price={4.5}
           passRef={Row2Ref}
         />
         <NftItem
-          img="/assets/Nfts/bighead-9.svg"
+          img="/assets/Nfts/Group 12.svg"
           number={444}
           price={1.5}
           passRef={Row2Ref}

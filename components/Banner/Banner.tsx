@@ -5,15 +5,33 @@ const Banner = () => {
   return (
     <section className={styles.Section}>
       <div className={styles.ImgContainer}>
-        <img src="../assets/Nfts/bighead.svg" alt="The Weirdos" />
-        <img src="../assets/Nfts/bighead-1.svg" alt="The Weirdos" />
-        <img src="../assets/Nfts/bighead-2.svg" alt="The Weirdos" />
-        <img src="../assets/Nfts/bighead-3.svg" alt="The Weirdos" />
-        <img src="../assets/Nfts/bighead-4.svg" alt="The Weirdos" />
-        <img src="../assets/Nfts/bighead-5.svg" alt="The Weirdos" />
+        <img
+          src="../assets/Nfts/Group 1.svg"
+          alt="Banner first ePassport Image"
+        />
+        <img
+          src="../assets/Nfts/Group 2.svg"
+          alt="Banner second ePassport Image"
+        />
+        <img
+          src="../assets/Nfts/Group 3.svg"
+          alt="Banner third ePassport Image"
+        />
+        <img
+          src="../assets/Nfts/Group 4.svg"
+          alt="Banner fourth ePassport Image"
+        />
+        <img
+          src="../assets/Nfts/Group 11.svg"
+          alt="Banner fifth ePassport Image"
+        />
+        <img
+          src="../assets/Nfts/Group 7.svg"
+          alt="Banner sixth ePassport Image"
+        />
       </div>
       <h1 className={styles.Title}>
-        Get Your Virtual <br /> ePassport{" "}
+        Mint Your Virtual <br /> ePassport{" "}
       </h1>
       <div className={styles.BtnContainer}>
         <button type="button" className={styles.JoinNow}>
