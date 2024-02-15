@@ -1,5 +1,5 @@
 .Section {
-  min-height: 100vh;
+  min-height: 40vh;
   width: 100vw;
   background-color: #fff;
   [data-theme="dark"] & {
@@ -50,4 +50,61 @@
     font-size: 1em;
   }
   padding-top: 2rem;
+}
+
+.Form {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  margin: auto;
+  padding: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  flex-direction: column;
+  [data-theme="dark"] & {
+    color: #fff;
+  }
+  .MainDiv {
+    padding: 10px 0px;
+    input {
+      width: 300px;
+      padding: 11px;
+      font-size: large;
+      border: 1px solid #9b9b9b;
+      [data-theme="dark"] & {
+        border: none;
+      }
+      border-radius: 5px;
+    }
+    textarea {
+      width: 300px;
+      padding: 11px;
+      font-size: large;
+      border: 1px solid #9b9b9b;
+
+      [data-theme="dark"] & {
+        border: none;
+      }
+      border-radius: 5px;
+      resize: none;
+    }
+    button {
+      padding: 14px 40px;
+      font-size: medium;
+      border: none;
+      border-radius: 5px;
+      background-color: #494949;
+      [data-theme="dark"] & {
+        color: #9b9b9b;
+      }
+      color: #f3f2f2;
+      cursor: pointer;
+      font-weight: 500;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    button:hover {
+      background-color: #323232;
+    }
+  }
 }
